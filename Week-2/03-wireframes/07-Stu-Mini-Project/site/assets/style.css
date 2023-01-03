@@ -1,0 +1,50 @@
+:root{
+    --titleColor:fuchsia;
+}
+body {
+    background-color: rgb(54, 54, 83);
+    color: white;
+}
+header {
+    height: 150px;
+    padding: 20px 10%;
+}
+header h1, h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--titleColor);
+    padding: 20px 0px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+header p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContent {
+    border: 2px;
+    border-style: dashed;
+    margin: 0px 5px;
+}
+
+#gridSection{
+    padding: 20px 10%;
+    display: grid;
+    grid-template-columns: 1f 1f 1f;
+    grid-template-rows: 1f 1f;
+    grid-template-areas:
+    "row column grid"
+    "gradients glow overlay"    
+    ;
+}
+
+#row {
+    grid-area: row;
+    
+}
